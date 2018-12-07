@@ -1,17 +1,5 @@
-# Networking with Python
+## Python III Network Programming
 
-## Python 3 - Networking Professional
-
-```text
-Be a Python 3 Ready Network Professional”
-Python 3 to automate your network administration using the python coding.
-providing a detailed explanation on Netmiko and its applications for SSH management
- with 11 real world examples.
-
-With Software Defined Networking (SDN) in picture, knowing python programming
-is vital for the future of administering the network and systems.
-
-```
 TODO :
 
 - [ ] Python code to Change the Hostname using telnet.

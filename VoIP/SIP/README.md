@@ -16,3 +16,31 @@
 <a>
   <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-3.svg" width="80%" height="80%">
 </a>
+
+<a>
+  <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-4.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-5.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-6.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-7.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-8.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-9.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-10.svg" width="80%" height="80%">
+</a>

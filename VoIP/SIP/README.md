@@ -44,3 +44,11 @@
 <a>
   <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-10.svg" width="80%" height="80%">
 </a>
+
+<a>
+  <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-11.svg" width="80%" height="80%">
+</a>
+
+<a>
+  <img src="https://github.com/stan-alam/netwrkProgrmng/blob/develop/VoIP/SIP/chaps/01/svg_files/Sip-12.svg" width="80%" height="80%">
+</a>

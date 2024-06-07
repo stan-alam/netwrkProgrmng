@@ -72,3 +72,48 @@ Table of Contents
 45 Lame delegation Resources and references
 46 Simulate slow or failing DNS
 ```
+
+
+𝗗𝗡𝗦 𝗹𝗼𝗼𝗸𝘂𝗽 𝗽𝗿𝗼𝗰𝗲𝘀𝘀 𝗲𝘅𝗽𝗹𝗮𝗶𝗻𝗲𝗱 𝗶𝗻 𝘀𝗶𝗺𝗽𝗹𝗲 𝘁𝗲𝗿𝗺𝘀.
+
+DNS lookup is the process of translating human-readable domain names like "www. example .com" into IP addresses like "172 .217 .22 .14". It's essentially how a web browser converts a URL into an IP address.
+
+𝗧𝗼 𝗴𝗲𝘁 𝗮 𝗰𝗹𝗲𝗮𝗿 𝗽𝗶𝗰𝘁𝘂𝗿𝗲 𝗼𝗳 𝗵𝗼𝘄 𝗗𝗡𝗦 𝗹𝗼𝗼𝗸𝘂𝗽 𝘄𝗼𝗿𝗸𝘀, 𝗹𝗲𝘁'𝘀 𝘄𝗮𝗹𝗸 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗽𝗿𝗼𝗰𝗲𝘀𝘀:
+
+𝟭) 𝗨𝘀𝗲𝗿 𝗶𝗻𝗽𝘂𝘁
+
+It all begins when you enter a URL into your web browser, such as "www. example .com".
+
+𝟮) 𝗕𝗿𝗼𝘄𝘀𝗲𝗿 𝗰𝗮𝗰𝗵𝗲
+
+Before involving DNS servers, the browser first looks in its own cache. If it already knows the IP address for the domain, then the process stops here.
+
+𝟯) 𝗢𝗦 𝗰𝗮𝗰𝗵𝗲
+
+If the browser doesn't have the IP address stored, the operating system's cache is then examined. The OS maintains its own cache of DNS lookups.
+
+𝟰) 𝗥𝗲𝗰𝘂𝗿𝘀𝗶𝘃𝗲 𝗿𝗲𝘀𝗼𝗹𝘃𝗲𝗿
+
+If the IP address cannot be retrieved via the OS cache, then the request is forwarded to the recursive resolver, which is typically managed by your internet service provider (ISP). To find the IP address, this server will act on behalf of the user.
+
+𝟱) 𝗥𝗼𝗼𝘁 𝗗𝗡𝗦 𝘀𝗲𝗿𝘃𝗲𝗿
+
+The recursive resolver first checks its cache. If it doesn't have the IP address, it then queries a root DNS server. Although the root server normally does not know the IP address for each domain, it knows where to direct the query next.
+
+𝟲) 𝗧𝗼𝗽-𝗹𝗲𝘃𝗲𝗹 𝗱𝗼𝗺𝗮𝗶𝗻 (𝗧𝗟𝗗) 𝘀𝗲𝗿𝘃𝗲𝗿
+
+Based on the domain extension (such as .com, .net, or .org), the root server will direct the resolver to a TLD server. This server keeps track of which nameservers are responsible for handling domains under that TLD.
+
+𝟳) 𝗗𝗼𝗺𝗮𝗶𝗻'𝘀 𝗻𝗮𝗺𝗲𝘀𝗲𝗿𝘃𝗲𝗿
+
+From here the TLD server points the resolver to the authoritative nameserver for the specific domain (e.g., "example .com"). The IP address for the domain is known by this nameserver. This nameserver returns the IP address for the domain to the resolver.
+
+𝟴) 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 𝘁𝗼 𝗰𝗹𝗶𝗲𝗻𝘁
+
+Now that the resolver has finally retrieved the IP address, it sends it back to the OS. The OS then sends the IP address to the browser.
+
+𝟵) 𝗪𝗲𝗯𝘀𝗶𝘁𝗲 𝗮𝗰𝗰𝗲𝘀𝘀
+
+We've reached the final stage, the browser has the IP address for the domain that we originally entered. The browser can now fetch the website by making a request to the web server associated with that IP address.
+
+As we've seen, DNS lookup can be a quick process or it can involve several steps and components to locate the IP address. Caching is a key strategy for DNS lookup. It occurs at multiple levels throughout the process so that future requests for 
